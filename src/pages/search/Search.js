@@ -113,9 +113,10 @@ export default function SearchPage({setSearch, setSearchValue}) {
                                 Et
                                 eligendi perspiciatis non deserunt sunt qui autem nulla quo.</h2>
                         </div>
-                        <div className={styles["column2"]} />
+                        <div className={styles["column2"]}/>
                         < div className={styles["column3"]}>
                             <div className={styles["buttons-container"]}>
+                                <h2>Only select one filter!</h2>
                                 <div className={styles["input-search"]}>
                                     {/*searchfield*/}
                                     <Input

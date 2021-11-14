@@ -6,6 +6,8 @@ import {BlueButton, Spinner} from "../../components";
 import {ResultCard} from "../../components/cards"
 import animal from "../../assets/images/animal.png"
 
+//IUCN 2021. IUCN Red List of Threatened Species. Version 2021-2 <www.iucnredlist.org>
+
 export default function ResultsPage({search, searchValue}) {
 
     useDarkTheme();
@@ -151,8 +153,7 @@ export default function ResultsPage({search, searchValue}) {
                     </div>
                 </>
             )
-        }
-        else if (search === 'name') {
+        } else if (search === 'name') {
             return (
                 <>
                     <div className={styles["page-container-name"]}>
@@ -183,8 +184,7 @@ export default function ResultsPage({search, searchValue}) {
                     </div>
                 </>
             )
-        }
-        else {
+        } else {
             return (
                 <>
                     <div className={styles["page-container"]}>

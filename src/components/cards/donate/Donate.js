@@ -6,7 +6,6 @@ export default function Donate({image, alt, link}) {
     return (
         <>
             <section className={styles["section-container"]}
-
             >
                 <div
                     className={styles["donate-container"]}

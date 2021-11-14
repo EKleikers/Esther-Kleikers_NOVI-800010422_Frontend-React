@@ -1,7 +1,6 @@
-
 import {initializeApp} from "firebase/app"
-import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from "firebase/auth"
-import {getFirestore, doc, setDoc, deleteDoc} from "firebase/firestore"
+import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut} from "firebase/auth"
+import {deleteDoc, doc, getFirestore, setDoc} from "firebase/firestore"
 
 const {
     REACT_APP_apiKey,

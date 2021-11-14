@@ -53,6 +53,7 @@
       align-items: center;
       justify-content: center;
       display: flex;
+
       h1 {
 
       }
@@ -142,11 +143,13 @@
     .popup {
       width: 570px;
       height: 645px;
+
       .popup-header {
         .close-icon {
           font-size: 50px;
         }
       }
+
       .popup-footer {
         height: 110px;
       }
@@ -161,6 +164,7 @@
     .popup {
       width: 650px;
       height: 675px;
+
       .popup-header {
         .close-icon {
           font-size: 55px;

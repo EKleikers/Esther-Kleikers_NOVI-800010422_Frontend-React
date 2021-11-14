@@ -44,7 +44,7 @@
     "identifier": "MD"
   },
   {
-  "name": "Marine Intertidal",
+    "name": "Marine Intertidal",
     "identifier": "MI"
   },
   {
@@ -71,5 +71,4 @@
     "name": " Unknown",
     "identifier": "UK"
   }
-
 ]

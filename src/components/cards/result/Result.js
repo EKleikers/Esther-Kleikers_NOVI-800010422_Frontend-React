@@ -7,7 +7,17 @@ import line from '../../../assets/images/icons/line-green.png';
 import question from '../../../assets/images/icons/question.png';
 import cheetah from "../../../assets/images/animal.png";
 
-export default function Result({children, onClick, kingdom, king_class, name_en, name_lt, category, population, image}) {
+export default function Result({
+                                   children,
+                                   onClick,
+                                   kingdom,
+                                   king_class,
+                                   name_en,
+                                   name_lt,
+                                   category,
+                                   population,
+                                   image
+                               }) {
 
 
     return (
@@ -28,16 +38,16 @@ export default function Result({children, onClick, kingdom, king_class, name_en,
                                 <div className={styles["population"]}>
 
                                     {population === 'Increasing' &&
-                                        <img className={styles["population-image"]} src={up} alt='increase'></img>
+                                    <img className={styles["population-image"]} src={up} alt='increase'></img>
                                     }
                                     {population === 'Decreasing' &&
-                                        <img className={styles["population-image"]} src={down} alt='decrease'></img>
+                                    <img className={styles["population-image"]} src={down} alt='decrease'></img>
                                     }
                                     {population === 'Stable' &&
-                                        <img className={styles["population-image"]} src={line} alt='stable'></img>
+                                    <img className={styles["population-image"]} src={line} alt='stable'></img>
                                     }
                                     {population === 'Unknown' &&
-                                        <img className={styles["population-image"]} src={question} alt='unknown'></img>
+                                    <img className={styles["population-image"]} src={question} alt='unknown'></img>
                                     }
                                 </div>
 

@@ -118,6 +118,7 @@
   .popup-container {
     .popup {
       height: 610px;
+
       .popup-footer {
         height: 100px;
       }
@@ -131,6 +132,7 @@
     .popup {
       width: 1000px;
       height: 620px;
+
       form {
         .input-row {
 
@@ -139,18 +141,22 @@
           flex-direction: row;
         }
       }
+
       .popup-header {
         .close-icon {
           font-size: 50px;
         }
       }
+
       .popup-submit {
         width: 700px;
         padding-left: 30px;
       }
+
       .inbetween {
         width: 20px;
       }
+
       .popup-footer {
         height: 110px;
       }

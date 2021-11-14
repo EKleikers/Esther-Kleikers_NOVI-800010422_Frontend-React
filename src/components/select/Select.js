@@ -10,12 +10,7 @@ function Select({
     return (
 
         <>
-        <div className={styles["select-container"]}>
-            {/*<label*/}
-            {/*    className="label_form"*/}
-            {/*    htmlFor={input_id}*/}
-            {/*>*/}
-
+            <div className={styles["select-container"]}>
                 <select
                     name={input_name}
                     id={input_id}
@@ -26,20 +21,10 @@ function Select({
                             message: required_message
                         },
                     })}
-                    // value={value}
-                    // label={label}
-                    // options={options}
-                    // onChange={onChange}
                 >
                     <option hidden value="">All</option>
                     {children}
-
-                    {/*{options.map(option => {*/}
-                    {/*    return (<option key={option.value} value={option.value}>{option.text}</option>);*/}
-                    {/*})}*/}
                 </select>
-                {/*{errors[input_id] && <p className={styles.error_message}>{errors[input_id].message}</p>}*/}
-            {/*</label>*/}
             </div>
         </>
     )

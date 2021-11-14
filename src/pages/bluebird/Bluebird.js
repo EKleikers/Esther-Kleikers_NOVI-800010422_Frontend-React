@@ -18,7 +18,6 @@ export default function BluebirdPage() {
                              backgroundSize: "cover",
                              height: "220vh",
                              width: "100%",
-                             //marginLeft: '-20%',
                          }}
                     >
                     </div>

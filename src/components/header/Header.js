@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <>
             <div className={styles["header-container"]}>
-                <Logo />
+                <Logo/>
                 <div className={styles["topmenu-container"]}>
                     <Topmenu/>
                 </div>

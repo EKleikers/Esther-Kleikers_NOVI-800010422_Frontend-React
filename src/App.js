@@ -1,10 +1,10 @@
 import './App.css';
 
 import {useState} from "react";
-import {Switch, Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import {BluebirdPage, DetailsPage, DonatePage, HomePage, ResultsPage, SearchPage} from "./pages";
-import {Header, Footer, PrivateRoute} from "./components"
+import {Footer, Header, PrivateRoute} from "./components"
 
 export default function App() {
 

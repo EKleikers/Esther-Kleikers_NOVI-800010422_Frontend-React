@@ -1,4 +1,3 @@
-
 import {list_partners} from "./partners.js";
 import list_users from "./users.json";
 import {list_donates} from "./donates";
@@ -18,7 +17,6 @@ export {
 
     //Search
     list_categories,
-    // list_countries,
     list_habitats,
     list_marines,
     list_regions,

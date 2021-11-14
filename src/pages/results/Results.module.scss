@@ -66,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   .bluebutton {
     width: 25vw;
     min-width: 400px;
@@ -96,9 +97,9 @@
 //large screens (vanaf 1600px)
 @media screen and (min-width: 1600px) {
   .results-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 3em 3em;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em 3em;
+  }
 
 
 }

@@ -53,7 +53,7 @@ export default function Profile({setProfileOpen}) {
 
                         >
                         </Input>
-                        <div  className={styles["inbetween"]} />
+                        <div className={styles["inbetween"]}/>
                         <Input
                             input_type="text"
                             placeholder="Repeat Email"
@@ -83,7 +83,7 @@ export default function Profile({setProfileOpen}) {
                             errors={errors}
                         >
                         </Input>
-                        <div  className={styles["inbetween"]} />
+                        <div className={styles["inbetween"]}/>
                         <Input
                             input_type="password"
                             placeholder="Repeat Password"
@@ -115,7 +115,7 @@ export default function Profile({setProfileOpen}) {
                             errors={errors}
                         >
                         </Input>
-                        <div  className={styles["inbetween"]} />
+                        <div className={styles["inbetween"]}/>
                         <div className={styles["popup-submit"]}>
                             <BlueButton
 

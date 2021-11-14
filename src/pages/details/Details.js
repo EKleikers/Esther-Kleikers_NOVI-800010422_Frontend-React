@@ -189,7 +189,7 @@ export default function DetailsPage() {
                                     <div className={styles["column1"]}>
                                         <div className={styles["text-container"]}>
 
-                                            <h1 >{header.main_common_name}</h1>
+                                            <h1>{header.main_common_name}</h1>
                                             <hr/>
                                             <h2>{header.scientific_name}</h2>
                                             <h3>POPULATION TREND:</h3>

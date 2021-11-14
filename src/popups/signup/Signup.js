@@ -45,8 +45,8 @@ export default function Signup({signinOpen, setSigninOpen, signupOpen, setSignup
     }
 
     const handleSignin = (event) => {
-            SigninForm()
-            SignupForm()
+        SigninForm()
+        SignupForm()
     }
 
     return (
