@@ -1,71 +1,59 @@
-import React, {useState} from 'react';
-import styles from './CategoryFull.module.css';
+
+import React from "react";
 
 
-export default function CategoryFull({category, children}) {
+export default function DisplayCategoryName({category}) {
 
     switch(category){
         case 'EW':
             return(
-                <p>Extinct In The Wild</p>
+                <h1>Extinct In The Wild</h1>
             )
-            break;
         case 'EX':
             return(
-                <p>Extinct</p>
+                <h1>Extinct</h1>
             )
-            break;
         case 'CR':
             return(
-                <p>Critically Endangered</p>
+                <h1>Critically Endangered</h1>
             )
-            break;
         case 'EN':
             return(
-                <p>Endangered</p>
+                <h1>Endangered</h1>
             )
-            break;
         case 'VU':
             return(
-                <p>Vulnerable</p>
+                <h1>Vulnerable</h1>
             )
-            break;
         // case 'LR/cd':
         //    return(
-        //        <p>Lower Risk: Conservation Dependent</p>
+        //        <h1>Lower Risk: Conservation Dependent</h1>
         //   )
-        //     break;
         case 'NT':
             return(
-                <p>Near Threatened</p>
+                <h1>Near Threatened</h1>
             )
-            break;
         case 'LR/nt':
             return(
-                <p>Near Threatened</p>
+                <h1>Near Threatened</h1>
             )
-            break;
         case 'LC':
 
             return(
-                <p>Least Concern</p>
+                <h1>Least Concern</h1>
             )
-            break;
         case 'LR/lc':
             return(
-                <p>Least Concern</p>
+                <h1>Least Concern</h1>
             )
-            break;
         case 'DD':
             return(
-                <p>Data Deficient</p>
+                <h1>Data Deficient</h1>
             )
-            break;
         case 'NA':
             return(
-                <p>Not Applicable</p>
+                <h1>Not Applicable</h1>
             )
-            break;
         default:  ;
     }
 }

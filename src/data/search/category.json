@@ -1,0 +1,39 @@
+
+[
+  {
+    "name": "Extinct In The Wild",
+    "identifier": "EW"
+  },
+  {
+    "name": "Extinct",
+    "identifier": "EX"
+  },
+  {
+    "name": "Critically Endangered",
+    "identifier": "CR"
+  },
+  {
+    "name": "Endangered",
+    "identifier": "EN"
+  },
+  {
+    "name": "Vulnerable",
+    "identifier": "VU"
+  },
+  {
+    "name": "Near Threatened",
+    "identifier": "NT"
+  },
+  {
+    "name": "Least Concern",
+    "identifier": "LC"
+  },
+  {
+    "name": "Data Deficient",
+    "identifier": "DD"
+  },
+  {
+    "name": "Not Applicable",
+    "identifier": "NA"
+  }
+]

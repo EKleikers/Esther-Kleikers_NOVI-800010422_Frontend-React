@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Antarctic",
+    "identifier": "antarctic"
+  },
+  {
+    "name": "Caribbean Islands",
+    "identifier": "caribbean"
+  },
+  {
+    "name": "East Asia",
+    "identifier": "east_asia"
+  },
+  {
+    "name": "Europe",
+    "identifier": "europe"
+  },
+  {
+    "name": "Mesoamerica",
+    "identifier": "mesoamerica"
+  },
+  {
+    "name": "Northern Africa",
+    "identifier": "northern_africa"
+  },
+  {
+    "name": "North America",
+    "identifier": "north_america"
+  },
+  {
+    "name": "North Asia",
+    "identifier": "north_asia"
+  },
+  {
+    "name": "Oceania",
+    "identifier": "oceania"
+  },
+  {
+    "name": "South America",
+    "identifier": "south_america"
+  },
+  {
+    "name": "South and Southeast Asia",
+    "identifier": "south_southeast_asia"
+  },
+  {
+    "name": "Sub-Saharan Africa",
+    "identifier": "sub_saharan_africa"
+  },
+  {
+    "name": "West and Central Asia",
+    "identifier": "west_central_asia"
+  }
+
+]
+
+

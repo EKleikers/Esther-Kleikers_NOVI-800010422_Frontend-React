@@ -1,19 +1,12 @@
-import CR from "./cr.png";
-import DD from "./dd.png";
-import EN from "./en.png";
-import EW from "./ew.png";
-import EX from "./ex.png";
-import LC from "./lc.png";
-import NT from "./nt.png";
-import VU from "./vu.png";
+import A1 from "./animal_1.png";
+import A2 from "./animal_2.png";
+import A3 from "./animal_3.png";
+import A4 from "./animal_4.png";
+
 
 export {
-    CR,
-    DD,
-    EN,
-    EW,
-    EX,
-    LC,
-    NT,
-    VU,
+    A1,
+    A2,
+    A3,
+    A4
 }

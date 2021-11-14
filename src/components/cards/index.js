@@ -1,14 +1,9 @@
-import BlueButton from "./bluebutton/BlueButton";
-import DonatePage from "./donate/Donate";
-import HomePage from "./home/Home";
-import ResultsPage from "./results/Results";
-import SearchPage from "./search/Search";
+import DonateCard from "./donate/Donate";
+import PartnerCard from "./partner/Partner";
+import ResultCard from "./result/Result";
 
-export {
-    BlueButton,
-
-    DonatePage,
-    HomePage,
-    ResultsPage,
-    SearchPage,
+export{
+    DonateCard,
+    PartnerCard,
+    ResultCard,
 }

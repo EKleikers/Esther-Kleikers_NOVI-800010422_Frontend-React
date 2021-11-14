@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
-import styles from './CategoryImage.module.css';
-//import {s1, s2, s3, s4, s5, s6, s7, s8, s9} from "./../../assets/leftmenu";
-import {CR, DD, EN, EW, EX, LC, NT, VU} from "./../../assets/category";
+import styles from './DisplayCategoryImage.module.scss';
+import {CR, DD, EN, EW, EX, LC, NT, VU} from "../../assets/images/category";
 
-export default function CategoryImage({category, children}) {
+export default function DisplayCategoryImage({category, children}) {
 
     switch (category) {
         case 'EW':
@@ -14,7 +12,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'EX':
             return (
                 <img
@@ -23,7 +20,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'CR':
             return (
                 <img
@@ -32,7 +28,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'EN':
             return (
                 <img
@@ -41,7 +36,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'VU':
             return (
                 <img
@@ -50,7 +44,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             );
-            break;
         // case 'LR/cd':
         //      return(
         //                 <img
@@ -67,7 +60,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'LR/nt':
             return (
                 <img
@@ -76,7 +68,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'LC':
             return (
                 <img
@@ -85,7 +76,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'LR/lc':
             return (
                 <img
@@ -94,7 +84,6 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'DD':
             return (
                 <img
@@ -103,14 +92,12 @@ export default function CategoryImage({category, children}) {
                     className={styles["image-category"]}
                 />
             )
-            break;
         case 'NA':
             return (
                 <p>
                     No iucn category indication
                 </p>
             )
-            break;
         default:
             ;
     }

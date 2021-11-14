@@ -1,25 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {useState} from "react";
+import {Switch, Route} from 'react-router-dom';
+
+import {BluebirdPage, DetailsPage, DonatePage, HomePage, ResultsPage, SearchPage} from "./pages";
+import {Header, Footer, PrivateRoute} from "./components"
+
+export default function App() {
+
+    const [search, setSearch] = useState('');
+    const [searchValue, setSearchValue] = useState('');
+    const [url, setUrl] = useState('');
+
+    return (
+        <div name="app-container" className="app-container">
+
+            <header className="header">
+                <Header/>
+            </header>
+
+            <section className="pages">
+                <Switch>
+                    <Route exact path="/"><HomePage/></Route>
+                    <Route path="/bluebird"><BluebirdPage/></Route>
+                    <Route path="/donate"><DonatePage/></Route>
+
+                    <PrivateRoute path="/search">
+                        <SearchPage setSearch={setSearch} setSearchValue={setSearchValue}/>
+                    </PrivateRoute>
+                    <PrivateRoute path="/results">
+                        <ResultsPage setUrl={setUrl} search={search} searchValue={searchValue}/>
+                    </PrivateRoute>
+                    <PrivateRoute path="/details/:id">
+                        <DetailsPage url={url}/>
+                    </PrivateRoute>
+                </Switch>
+            </section>
+            <footer>
+                <Footer/>
+            </footer>
+
+        </div>
+    )
 }
 
-export default App;
+

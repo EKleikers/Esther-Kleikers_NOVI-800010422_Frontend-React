@@ -1,23 +1,22 @@
 import React from 'react';
-import styles from './Partner.module.scss';
-//import bird from "../../../assets/bird.png";
+import styles from './Donate.module.scss';
 
-export default function Partner({image, alt, link}) {
+export default function Donate({image, alt, link}) {
 
     return (
         <>
             <section className={styles["section-container"]}
-                     href={link}
+
             >
                 <div
-                    className={styles["partner-container"]}
+                    className={styles["donate-container"]}
                 >
                     <a
-                        className={styles["partner-button"]}
-           
-
+                        className={styles["donate-button"]}
+                        href={link}
                     >
                         <img
+                            className={styles["donate-image"]}
                             src={image}
                             alt={alt}
 

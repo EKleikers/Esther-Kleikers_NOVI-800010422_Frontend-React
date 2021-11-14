@@ -1,0 +1,109 @@
+@import "./colors.scss";
+
+.header {
+  background-color: transparent;
+}
+
+.bg_image {
+  margin-top: -143px;
+}
+
+//mobile
+.page-container {
+  //background-color: lightyellow;
+  min-height: 80vh;
+  heigth: auto;
+  width: 100%;
+  display: flex;
+  margin-bottom: -8rem;
+  margin-top: -3rem;
+
+  .page {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+
+    .column1 {
+     // background-color: lightblue;
+      width: 100%;
+    }
+
+    .column2 {
+      //background-color: aquamarine;
+      width: 100%;
+      height: 0%;
+    }
+
+    .column3 {
+      //background-color: blue;
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  background-color: transparent;
+}
+
+//tablets (vanaf 768px)
+@media screen and (min-width: 768px) {
+  .page-container {
+    //background-color: lightblue;
+  }
+}
+
+//small screens (vanaf 992px)
+@media screen and (min-width: 992px) {
+  .page-container {
+    //background-color: chartreuse;
+
+    .page {
+      .column3 {
+        .grid {
+          padding-bottom: 4rem;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 5% 6%;
+        }
+      }
+    }
+  }
+}
+
+//standard screen (vanaf 1200px)
+@media screen and (min-width: 1200px) {
+  .page-container {
+    //background-color: yellow;
+
+  }
+}
+
+//large screens (vanaf 1600px)
+@media screen and (min-width: 1600px) {
+  .page-container {
+    //background-color: pink;
+
+    .page {
+      flex-direction: row;
+
+      .column1 {
+        width: 40%
+      }
+
+      .column2 {
+        width: 10%;
+        height: auto
+      }
+
+      .column3 {
+        width: 55%;
+
+      }
+    }
+  }
+}
+
+

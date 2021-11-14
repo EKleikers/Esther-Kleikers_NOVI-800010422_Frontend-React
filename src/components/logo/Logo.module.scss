@@ -1,0 +1,77 @@
+@import "../../styles/styles.scss";
+
+.logo-container {
+  width: 35vw;
+  display: flex;
+  justify-content: flex-start;
+
+  .image-container {
+    display: inline-block;
+    margin-left: 6vw;
+    margin-top: 1vh;
+    padding-right: 1vw;
+    width: 20%;
+
+    .image {
+      width: 100%;
+    }
+  }
+
+  .text-container {
+    padding-top: 1rem;
+    display: inline-block;
+
+    h1 {
+      font-size: 2.5vw;
+      color: $color-blue;
+    }
+  }
+}
+
+//tablets (vanaf 768px)
+@media screen and (min-width: 768px) {
+  .logo-container {
+    .image-container {
+      margin-left: 4vw;
+    }
+  }
+}
+
+//small screens (vanaf 992px)
+@media screen and (min-width: 992px) {
+  .logo-container {
+    .image-container {
+      margin-left: 3vw;
+    }
+  }
+}
+
+//standard screen (vanaf 1200px)
+@media screen and (min-width: 1200px) {
+  .logo-container {
+    .image-container {
+      margin-left: 3vw;
+      width: 15%;
+    }
+  }
+}
+
+//large screens (vanaf 1600px)
+@media screen and (min-width: 1600px) {
+
+  .logo-container {
+
+    .image-container {
+      margin-left: 2vw;
+      width: 10%;
+    }
+
+    .text-container {
+
+      h1 {
+        font-size: 2vw;
+        color: $color-blue;
+      }
+    }
+  }
+}

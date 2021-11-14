@@ -1,11 +1,50 @@
 [
   {
-    "name": "Extinct In The Wild",
-    "identifier": "EW"
+    "name": "Residential & commercial development",
+    "identifier": "RC"
   },
   {
-    "name": "Extinct",
-    "identifier": "EX"
+  "name": "Agriculture & aquaculture",
+    "identifier": "AA"
+  },
+  {
+    "name": "Energy production & mining",
+    "identifier": "EM"
+  },
+  {
+    "name": "Transportation & service corridors",
+    "identifier": "TS"
+  },
+  {
+    "name": "Biological resource use",
+    "identifier": "BR"
+  },
+  {
+    "name": "Human intrusions & disturbance",
+    "identifier": "HI"
+  },
+  {
+    "name": "Natural system modifications",
+    "identifier": "NM"
+  },
+  {
+    "name": "Invasive and other problematic species, genes & diseases",
+    "identifier": "IP"
+  },
+  {
+    "name": "Pollution",
+    "identifier": "PT"
+  },
+  {
+    "name": "Geological events",
+    "identifier": "GE"
+  },
+  {
+    "name": "Climate change & severe weather",
+    "identifier": "CC"
+  },
+  {
+    "name": "Other options",
+    "identifier": "OO"
   }
-
 ]

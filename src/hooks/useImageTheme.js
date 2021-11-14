@@ -1,14 +1,18 @@
 
 import {useEffect} from 'react'
+//import Header from '../components/header/Header'
 
-function useBrownBody() {
+export default function useImageTheme() {
     useEffect(() => {
-        document.body.style.backgroundColor = '#2E2929'
 
+
+        document.body.style.marginTop = '-140px'
+        // document.main.style.paddingTop = '140px'
         return () => {
-            document.body.style.backgroundColor = '#fff'
+            document.body.style.marginTop = '0px'
+
         }
     })
 }
 
-export default useBrownBody
+

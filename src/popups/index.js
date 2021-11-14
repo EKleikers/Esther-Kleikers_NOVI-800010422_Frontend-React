@@ -1,15 +1,10 @@
-import BluebirdPage from "./bluebird/Bluebird";
-import DetailsPage from "./details/Details";
-import DonatePage from "./donate/Donate";
-import HomePage from "./home/Home";
-import ResultsPage from "./results/Results";
-import SearchPage from "./search/Search";
+import Profile from "./profile/Profile";
+import Signin from "./signin/Signin";
+import Signup from "./signup/Signup";
+
 
 export {
-    BluebirdPage,
-    DetailsPage,
-    DonatePage,
-    HomePage,
-    ResultsPage,
-    SearchPage,
+    Profile,
+    Signin,
+    Signup,
 }

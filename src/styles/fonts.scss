@@ -1,0 +1,115 @@
+@import "./colors.scss";
+
+
+//10px = 0.625rem
+//12px = 0.75rem
+//14px = 0.875rem
+//16px = 1rem (base)
+//18px = 1.125rem
+//20px = 1.25rem
+//24px = 1.5rem
+//30px = 1.875rem
+//32px = 2rem
+
+$f-family: Avenir;
+$f-weight: lighter;
+
+
+h1 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+h2 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+h3 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+h4 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+h5 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+h6 {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+p {
+  font-family: $f-family;
+  font-weight: $f-weight;
+  color: $color-white;
+}
+
+//mobile
+    h1 {font-size: 1.2rem;}
+    h2 {font-size: 1rem;}
+    h3 {font-size: 0.85rem;}
+    h4 {font-size: 0.70rem ;}
+    h5 {font-size: 0.65rem;}
+    h6 {font-size: 0.60rem;}
+    p {font-size: 0.70rem;}
+
+
+//tablets (vanaf 768px)
+@media screen and (min-width: 768px) {
+  h1 {font-size: 1.4rem;}
+  h2 {font-size: 1.55rem;}
+  h3 {font-size: 0.925rem;}
+  h4 {font-size: 0.8rem ;}
+  h5 {font-size: 0.675rem;}
+  h6 {font-size: 0.55rem;}
+  p {font-size: 0.8rem;}
+}
+
+//small screens (vanaf 992px)
+@media screen and (min-width: 992px) {
+  h1 {font-size: 1.6rem;}
+  h2 {font-size: 1.55rem;}
+  h3 {font-size: 0.925rem;}
+  h4 {font-size: 0.8rem ;}
+  h5 {font-size: 0.675rem;}
+  h6 {font-size: 0.55rem;}
+  p {font-size: 0.8rem;}
+}
+
+//standard screen (vanaf 1200px)
+@media screen and (min-width: 1200px) {
+  h1 {font-size: 1.9rem;}
+  h2 {font-size: 1.55rem;}
+  h3 {font-size: 0.925rem;}
+  h4 {font-size: 0.8rem ;}
+  h5 {font-size: 0.675rem;}
+  h6 {font-size: 0.55rem;}
+  p {font-size: 0.8rem;}
+}
+
+//large screens (vanaf 1600px)
+@media screen and (min-width: 1600px) {
+  h1 {font-size: 2.2rem;}
+  h2 {font-size: 1.75rem;}
+  h3 {font-size: 1.125rem;}
+  h4 {font-size: 1rem ;}
+  h5 {font-size: 0.875rem;}
+  h6 {font-size: 0.75rem;}
+  p {font-size: 1rem;}
+}
+
+
+

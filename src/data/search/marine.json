@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Arctic Sea",
+    "identifier": "AS"
+  },
+  {
+    "name": "Atlantic - Antarctic",
+    "identifier": "AA"
+  },
+  {
+    "name": "Atlantic - eastern central",
+    "identifier": "AEC"
+  },
+  {
+    "name": "Atlantic - northeast",
+    "identifier": "ANE"
+  },
+  {
+    "name": "Atlantic - northwest",
+    "identifier": "ANW"
+  },
+  {
+    "name": "Atlantic - southeast",
+    "identifier": "ASE"
+  },
+  {
+    "name": "Atlantic - southwest",
+    "identifier": "ASW"
+  },
+  {
+    "name": "Atlantic - western central ",
+    "identifier": "AWC"
+  },
+  {
+    "name": "Indian Ocean - Antarctic",
+    "identifier": "IOA"
+  },
+  {
+    "name": "Indian Ocean - eastern",
+    "identifier": "IOE"
+  },
+  {
+    "name": "Indian Ocean - western",
+    "identifier": "IOW"
+  },
+  {
+    "name": "Mediterranean and Black Sea",
+    "identifier": "MB"
+  },
+  {
+    "name": "Pacific - Antarctic",
+    "identifier": "PA"
+  },
+  {
+    "name": "Pacific - eastern central",
+    "identifier": "PEC"
+  },
+  {
+    "name": "Pacific - northeast",
+    "identifier": "PNE"
+  },
+  {
+    "name": "Pacific - northwest",
+    "identifier": "PNW"
+  },
+  {
+    "name": "Pacific - southeast ",
+    "identifier": "PSE"
+  },
+  {
+    "name": "Pacific - southwest",
+    "identifier": "PSW"
+  },
+  {
+    "name": "Pacific - western central",
+    "identifier": "PWC"
+  }
+]

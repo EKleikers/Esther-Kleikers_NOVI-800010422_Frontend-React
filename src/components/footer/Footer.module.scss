@@ -1,18 +1,16 @@
+@import "../../styles/styles.scss";
+
 .footer-container {
     background-color: transparent;
     margin-top: -3%;
     align-items: center;
     margin-left: 15px;
     padding-bottom: 15px;
+
+    .footer-text {
+        color: $color-blue;
+        margin-left: 2vw;
+    }
 }
 
 
-.footer-text {
-    color: #1FA5C4;
-    /*color: white;*/
-    text-decoration: none;
-    font-family: "Avenir";
-    font-size: 25px;
-    font-weight: initial;
-    margin-left: 20px;
-}

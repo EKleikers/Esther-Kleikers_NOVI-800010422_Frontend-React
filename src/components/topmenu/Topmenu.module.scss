@@ -1,0 +1,166 @@
+@import "../../styles/styles.scss";
+
+nav {
+  width: 100%;
+  height: 2vw;
+  padding-right: 1vw;
+  margin-left: 5vw;
+  margin-top: -1vh;
+}
+
+.nav-container {
+  elevation: above;
+
+  .list {
+    list-style-type: none;
+
+    .link {
+      color: #1FA5C4;
+      text-decoration: none;
+      font-family: "Avenir";
+      font-size: 2vw;
+      font-weight: initial;
+    }
+
+    .active-link {
+      border-bottom: 1px solid #1FA5C4;
+    }
+
+    .button-link {
+      color: #1FA5C4;
+      text-decoration: none;
+      font-family: "Avenir";
+      font-size: 2vw;
+      font-weight: initial;
+      background-color: transparent;
+      border-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+.nav-dropdown {
+  position: absolute;
+  left: 60%;
+  top: 6vh;
+  width: 128px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0.1rem solid #00000059;
+}
+
+.nav-dropdown li {
+  height: 2vh;
+  background-color: #00000059;
+  border-radius: 5px;
+  font-family: Avenir;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #FFFFFFCC;
+  margin-bottom: 0.01rem;
+  margin-left: -0.1rem;
+  box-shadow: inset 0.3rem 0.3rem 0 0 #000;
+  padding-left: 1rem;
+}
+.nav-dropdown li:hover {
+  text-decoration: none;
+  /*background-color: orange;*/
+  color: #1FA5C4;
+}
+
+
+//tablets (vanaf 768px)
+@media screen and (min-width: 768px) {
+}
+
+//small screens (vanaf 992px)
+@media screen and (min-width: 992px) {
+  nav {
+    height: 2vw;
+    padding-top: 1rem;
+  }
+
+  .nav-container {
+    width: 100%;
+    elevation: above;
+
+
+    .list {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      margin-left: auto;
+
+      .link {
+        font-size: 1.7vw;
+      }
+
+      .active-link {
+        border-bottom: 3px solid #1FA5C4;
+      }
+
+      .button-link {
+        font-size: 1.7vw;
+        margin-left: 1vw;
+      }
+    }
+  }
+
+  .menu-container {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    left: 20vw;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
+
+  .nav-dropdown {
+    position: absolute;
+    top: 12vh;
+    width: 200px;
+    left: 76vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-dropdown li {
+    height: 3vh;
+    background-color: #00000059;
+    border-radius: 5px;
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 28px;
+    color: #FFFFFFCC;
+    margin-bottom: 0.1rem;
+    margin-left: -1.1rem;
+    box-shadow: inset 0.3rem 0.3rem 0 0 #000;
+    padding-left: 1rem;
+  }
+
+  .nav-dropdown li:hover {
+    text-decoration: none;
+    /*background-color: orange;*/
+    color: #1FA5C4;
+  }
+}
+
+//standard screen (vanaf 1200px)
+@media screen and (min-width: 1200px) {
+}
+
+//large screens (vanaf 1600px)
+@media screen and (min-width: 1600px) {
+}
+
+
+
+
+

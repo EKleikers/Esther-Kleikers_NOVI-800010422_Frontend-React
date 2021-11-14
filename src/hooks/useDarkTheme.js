@@ -1,9 +1,9 @@
-// hooks/useDarkBody.js
-import { useEffect } from 'react'
 
-function useGreyBody() {
+import {useEffect} from 'react'
+
+export default function useBrownBody() {
     useEffect(() => {
-        document.body.style.backgroundColor = '#282c34'
+        document.body.style.backgroundColor = '#2E2929'
 
         return () => {
             document.body.style.backgroundColor = '#fff'
@@ -11,4 +11,4 @@ function useGreyBody() {
     })
 }
 
-export default useGreyBody
+

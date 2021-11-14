@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Forest",
+    "identifier": "F"
+  },
+  {
+    "name": "Savanna",
+    "identifier": "S"
+  },
+  {
+    "name": "Shrubland",
+    "identifier": "SL"
+  },
+  {
+    "name": "Grassland",
+    "identifier": "GL"
+  },
+  {
+    "name": "Wetlands",
+    "identifier": "WL"
+  },
+  {
+    "name": "Rocky areas",
+    "identifier": "RA"
+  },
+  {
+    "name": "Caves and Subterranean Habitats",
+    "identifier": "CS"
+  },
+  {
+    "name": "Desert",
+    "identifier": "D"
+  },
+  {
+    "name": "Marine Neritic",
+    "identifier": "MN"
+  },
+  {
+    "name": "Marine Oceanic",
+    "identifier": "MO"
+  },
+  {
+    "name": "Marine Deep Benthic",
+    "identifier": "MD"
+  },
+  {
+  "name": "Marine Intertidal",
+    "identifier": "MI"
+  },
+  {
+    "name": "Marine Coastal/Supratidal",
+    "identifier": "MC"
+  },
+  {
+    "name": "Artificial/Terrestrial",
+    "identifier": "AT"
+  },
+  {
+    "name": "Artificial/Aquatic & Marine",
+    "identifier": "AM"
+  },
+  {
+    "name": "Introduced vegetation",
+    "identifier": "IV"
+  },
+  {
+    "name": "Other",
+    "identifier": "OT"
+  },
+  {
+    "name": " Unknown",
+    "identifier": "UK"
+  }
+
+]

@@ -1,28 +1,15 @@
-.error_message {
-    color: red;
-    margin-bottom: -20px;
-    font-size: 16px;
-}
+@import "../../styles/styles.scss";
 
 
 .select-container {
-    display: flex;
-    flex-direction: column;
-    background-color: orange;
-}
+  display: flex;
+  flex-direction: column;
 
-
-
-
-
-
-
-
-select {
-    width:28rem;
-    max-width:28rem;
+  select {
+    width: 28rem;
+    max-width: 28rem;
     height: 4rem;
-    background-color: #00000059;
+    background-color: $color-input-bgr;
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -30,30 +17,39 @@ select {
     font-family: Avenir;
     font-weight: lighter;
     font-size: 28px;
-    color: #FFFFFFCC;
+    color: $color-white-trans;
     padding-left: 15px;
     margin-bottom: 1.3rem;
-    box-shadow:inset 0.3rem 0.3rem 0 0 #000;
-    border-left: white;
-    border-top: white;
-}
+    box-shadow: inset 0.3rem 0.3rem 0 0 $color-black;
+    border-left: $color-white;
+    border-top: $color-white;
+  }
 
-option {
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-
-    background:red!important;
+  option {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: $color-red !important;
     font-family: Avenir;
     font-weight: lighter;
+  }
+
+  option, optgroup {
+    -webkit-appearance: none;
+  }
+
+  option {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background: $color-red  !important;
+  }
+
+  .error_message {
+    color: $color-red ;
+    margin-bottom: -20px;
+    font-size: 16px;
+  }
 }
 
-option, optgroup { -webkit-appearance: none; }
-option
-{
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-
-    background:red!important;
-}

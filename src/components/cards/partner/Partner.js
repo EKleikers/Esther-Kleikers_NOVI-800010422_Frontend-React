@@ -1,26 +1,28 @@
 import React from 'react';
-import styles from './PartnerButton.module.css';
-import bird from "../../assets/bird.png";
+import styles from './Partner.module.scss';
 
-export default function PartnerButton({image, alt, link}) {
+export default function Partner({image, alt, link}) {
 
     return (
         <>
-            <div
-                 className={styles["partner-container"]}
+            <section className={styles["section-container"]}
             >
-                <a
-                    className={styles["partner-button"]}
-                    target="_blank"
-                    href={link}
+                <div
+                    className={styles["partner-container"]}
                 >
-                    <img
-                        src={image}
-                        alt={alt}
+                    <a
+                        className={styles["partner-button"]}
+                        href={link}
+                    >
+                        <img
+                            className={styles["partner-image"]}
+                            src={image}
+                            alt={alt}
 
-                    />
-                </a>
-            </div>
+                        />
+                    </a>
+                </div>
+            </section>
         </>
     )
 }

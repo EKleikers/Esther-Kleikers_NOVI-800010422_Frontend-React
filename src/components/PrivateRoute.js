@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Redirect, Route} from 'react-router-dom';
+import {AuthContext} from "../context/AuthContext";
 
-export default function PrivateRoute({isAuth, children, ...rest}) {
+export default function PrivateRoute({children, ...rest}) {
+
+    const {authentication} = useContext(AuthContext);
+    const [privateAuth] = authentication;
+
     return (
         <Route {...rest}>
-            {isAuth ? children : <Redirect to="/"/>}
+            {privateAuth ? children : <Redirect to="/"/>}
         </Route>
     );
 }

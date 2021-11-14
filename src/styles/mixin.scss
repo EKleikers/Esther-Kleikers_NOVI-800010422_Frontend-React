@@ -1,0 +1,32 @@
+@import "colors.scss";
+
+@mixin buttonStyle1 {
+  width: 200px;
+  height: 40px;
+  backgroundColor: $color-blue;
+  border: none;
+  border-radius: 8px;
+  color: $color-white;
+  font-size: 25px;
+}
+
+//use in page
+//button{
+//  @include buttonStyle1
+//}
+
+
+@mixin buttonStyle2($color, $fontSize) {
+  width: 200px;
+  height: 40px;
+  backgroundColor: $color;
+  border: none;
+  border-radius: 8px;
+  color: $color-white;
+  font-size: $fontSize;
+}
+
+//use in page
+//button{
+//  @include buttonStyle2(color-blue, 20px);
+//}

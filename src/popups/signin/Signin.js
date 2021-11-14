@@ -1,139 +1,123 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import {useForm} from 'react-hook-form';
-import styles from './Signin.module.css';
-import users from "../../../data/users.json";
-import {Link, useHistory} from "react-router-dom";
-import BlueButton from "../../../components/bluebutton/BlueButton";
-import Logo from "../../../components/logo/Logo"
-import Input from "../../../components/input/Input";
-import Signup from "../signup/Signup";
-import partners from "../../../data/partners.json";
+import styles from './Signin.module.scss';
+import BlueButton from "../../components/bluebutton/BlueButton";
+import Logo2 from "../../components/logo2/Logo2"
+import Input from "../../components/input/Input";
+
+import {AuthContext} from '../../context/AuthContext'
 
 export default function Signin({signinOpen, setSigninOpen, signupOpen, setSignupOpen}) {
-    const {handleSubmit, register, formState: {errors}, watch, reset} = useForm({mode: 'all',});
-    console.log({signinOpen, signupOpen});
 
-    const history = useHistory();
+    const {handleSubmit, register, formState: {errors}} = useForm({mode: 'all',});
+    const {action, email, password} = useContext(AuthContext);
+    const [signinAction, setSigninAction] = action;
+    const [signinEmail, setSigninEmail] = email;
+    const [signinPassword, setSigninPassword] = password;
 
+    //change useState AuthContext to call firebase actions
+    const handleSignin = (data) => {
+        setSigninEmail(data.email);
+        setSigninPassword(data.password);
+        setSigninAction('signin');
+        handleClose();
+        // history.push('/bluebird');
+    };
+
+    //toggle show/hide signin pop-up
+    const SigninForm = (event) => {
+        setSigninOpen(!signinOpen);
+    }
+
+    //toggle show/hide signup pop-up
+    const SignupForm = (event) => {
+        setSignupOpen(!signupOpen);
+    }
+
+    //close signin pop-up
     const handleClose = (event) => {
-        console.log("function: handleClose");
-        // event.preventDefault();
-        // setSigninOpen((signinOpen) => !signinOpen);
         setSigninOpen(false)
-        // console.log("popup sigin close")
-        console.log({signinOpen, signupOpen});
     }
 
     const handleSignup = (event) => {
-        console.log("function: handleSignup");
-        // event.preventDefault();
-        // setSigninOpen(false);
-        // console.log("popup sigin close")
-        setSignupOpen(true);
-        // console.log("popup signup open close")
-        // setSignupOpen((signupOpen) => !signupOpen);
-        console.log({signinOpen, signupOpen});
-
+        SigninForm()
+        SignupForm()
     }
-
-    const handleSignin = (name) => {
-        console.log("function: handleSignin");
-        handleClose();
-        // reset();
-        alert(`Welcome back ${name}`)
-        // setAuth(true);
-    }
-
-    const onFormSubmit = (data) => {
-        console.log("function: onformsubmit");
-
-        console.log(data);
-
-        users.find(users => users.name === data.name && users.password === data.password) ?
-            (
-                handleSignin(data.name)
-            ) : (
-                alert("This combination does not exist")
-            )
-    }
-
 
     return (
-        <div className={styles["popup-container"]}>
-            <div className={styles["popup"]}>
-                <div className={styles["popup-header"]}>
-                    <div className={styles["logo"]}>
-                        <Logo/>
-                    </div>
-                    <button
-                        className={styles["close-icon"]}
-                        onClick={handleClose}
-                    >
-                        x
-                    </button>
-                </div>
-                <form onSubmit={handleSubmit(onFormSubmit)}>
-                    <h1>SIGN IN</h1>
-                    <Input
-                        input_type="text"
-                        placeholder="Username"
-                        register_name="name"
-                        register={register}
-                        required_value={true}
-                        required_message="Please fill in your username"
-                        // pattern_value={/^\S+@\S+\.\S+$/}  //checking @ and .
-                        // pattern_message="this is not a valid email address"
-                        input_id="name"
-                        errors={errors}
-                    >
-                    </Input>
-
-                    <Input
-                        input_type="text"
-                        placeholder="Password"
-                        register_name="password"
-                        register={register}
-                        required_value={true}
-                        required_message="Please fill in you password"
-                        // pattern_value={/^\S+@\S+\.\S+$/}  //checking @ and .
-                        // pattern_message="pasword needs to be min 8 characters long"
-                        input_id="password"
-                        errors={errors}
-                    >
-                    </Input>
-
-                    <div>
-                        <br/>
-                        <BlueButton
-                            type="submit"
-                            // clickHandler={handleSignin}
+        <>
+            <div className={styles["popup-container"]}>
+                <div className={styles["popup"]}>
+                    <div className={styles["popup-header"]}>
+                        <div className={styles["logo"]}>
+                            <Logo2/>
+                        </div>
+                        <button
+                            className={styles["close-icon"]}
+                            onClick={SigninForm}
                         >
-                            SIGN IN
-                        </BlueButton>
+                            x
+                        </button>
                     </div>
 
-                </form>
-                <div className={styles["popup-footer"]}>
-                    <h2>New Here?</h2>
-                    <button className={styles["button-link"]}
-                            onClick={handleSignup}
-                    >
-                        Sign Up
-                    </button>
-                    {/*{signupOpen ? (*/}
-                    {/*    <Signup*/}
-                    {/*        signupOpen={signupOpen} setSignupOpen={setSignupOpen}*/}
-                    {/*        signinOpen={signinOpen} setSigninOpen={setSigninOpen}*/}
-                    {/*    />) : ("")}*/}
-                </div>
-                {signupOpen ? (
-                    <Signup
-                        signupOpen={signupOpen} setSignupOpen={setSignupOpen}
-                        signinOpen={signinOpen} setSigninOpen={setSigninOpen}
-                    />) : ("")}
-            </div>
+                    <div className={styles["popup-title"]}>
+                        <h1>SIGN IN</h1>
+                    </div>
 
-        </div>
+                    <form onSubmit={handleSubmit(handleSignin)}>
+
+
+                        <div className={styles["input-container"]}>
+                            <Input
+                                input_type="text"
+                                placeholder="E-mail"
+                                register_name="email"
+                                register={register}
+                                required_value={true}
+                                required_message="Please fill in your email"
+                                pattern_value={/^\S+@\S+\.\S+$/}  //checking @ and .
+                                pattern_message="this is not a valid email address"
+                                input_id="email"
+                                errors={errors}
+                            >
+                            </Input>
+
+                            <Input
+                                input_type="text"
+                                placeholder="Password"
+                                register_name="password"
+                                register={register}
+                                required_value={true}
+                                required_message="Please fill in you password"
+                                // pattern_value={/^\S+@\S+\.\S+$/}  //checking @ and .
+                                // pattern_message="pasword needs to be min 8 characters long"
+                                input_id="password"
+                                errors={errors}
+                            >
+                            </Input>
+
+                            <div className={styles["blue-button"]}>
+                                <br/>
+                                <BlueButton
+                                    type="submit"
+                                >
+                                    SIGN IN
+                                </BlueButton>
+                            </div>
+                        </div>
+                    </form>
+                    <div className={styles["popup-footer"]}>
+                        <h2>New Here?</h2>
+                        <button className={styles["button-link"]}
+                                onClick={handleSignup}
+                        >
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </>
     )
+    // }
 }
 

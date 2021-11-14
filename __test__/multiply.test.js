@@ -1,6 +1,5 @@
 //test function to check if jest-test is working
 
-//const {multiply} = require('../src/pages/home/Home');
 function multiply(a, b, c) {
     return a * b * c;
 }
