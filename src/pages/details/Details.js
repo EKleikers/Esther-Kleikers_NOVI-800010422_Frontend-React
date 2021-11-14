@@ -8,10 +8,11 @@ import axios from "axios";
 import {DisplayCategoryImage, DisplayCategoryName, DisplayHabitats, Spinner} from "../../components";
 import Leftmenu from "../../components/leftmenu/Leftmenu";
 
+import animal from "../../assets/images/animal.png"
 
 //IUCN 2021. IUCN Red List of Threatened Species. Version 2021-2 <www.iucnredlist.org>
 
-export default function DetailsPage({url}) {
+export default function DetailsPage() {
 
     const {id} = useParams();
     const [loading, setLoading] = useState(true);
@@ -22,14 +23,6 @@ export default function DetailsPage({url}) {
     const [threats, setThreats] = useState('');
     const [trades, setTrades] = useState('');
     const [conservations, setConservations] = useState('');
-
-    const image = url;
-    // console.log("DETAILS-HEADER: ", header);
-    // console.log("DETAILS-INFO: ", info);
-    // console.log("DETAILS-HABITAT: ", habitats);
-    // console.log("DETAILS-THREATS: ", threats);
-    // console.log("DETAILS-USEANDTRADE: ", trades);
-    // console.log("DETAILS-CONSERVATION: ", conservations);
 
     const [open1, toggleOpen1] = useState(false)
     const [open2, toggleOpen2] = useState(false)
@@ -158,7 +151,7 @@ export default function DetailsPage({url}) {
             <div className={styles["background-image"]}>
                 <div className="bg_image"
                      style={{
-                         backgroundImage: `url(${image})`,
+                         backgroundImage: `url(${animal})`,
                          backgroundSize: "cover",
                          backgroundRepeat: 'no-repeat',
                          backgroundPosition: 'center',
@@ -185,7 +178,7 @@ export default function DetailsPage({url}) {
                             <section id={'section1'} className={styles["overlay"]}>
                                 <div className={styles["top"]}>
                                     <div className={styles["column"]}>
-                                        <img src={image} alt={'selected animal'} className={styles["top-image"]}/>
+                                        <img src={animal} alt={'selected animal'} className={styles["top-image"]}/>
                                         <div className={styles["top-category"]}>
                                             {/*image iucn category*/}
                                             <DisplayCategoryImage
@@ -273,7 +266,6 @@ export default function DetailsPage({url}) {
                                 </div>
                             </section>
                             {/*assesment-section*/}
-
                             <section id={'section3'} className={styles["overlay"]}>
                                 <div className={styles["title"]}>
                                     <h1>ASSESMENT INFORMATION

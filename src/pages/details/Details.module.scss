@@ -138,7 +138,7 @@
   }
 
   .image-category {
-    width: 100%;
+    width: auto;
   }
 
   .page-content {
@@ -232,6 +232,18 @@
   @media screen and (min-width: 1600px) {
     .overlay {
       border: 3px solid pink;
+
+      .top {
+
+        .column {
+          .top-image {
+            max-width: 670px;
+          }
+          }
+
+          .top-category {
+          }
+        }
     }
   }
 

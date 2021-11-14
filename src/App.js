@@ -10,7 +10,6 @@ export default function App() {
 
     const [search, setSearch] = useState('');
     const [searchValue, setSearchValue] = useState('');
-    const [url, setUrl] = useState('');
 
     return (
         <div name="app-container" className="app-container">
@@ -29,10 +28,10 @@ export default function App() {
                         <SearchPage setSearch={setSearch} setSearchValue={setSearchValue}/>
                     </PrivateRoute>
                     <PrivateRoute path="/results">
-                        <ResultsPage setUrl={setUrl} search={search} searchValue={searchValue}/>
+                        <ResultsPage search={search} searchValue={searchValue}/>
                     </PrivateRoute>
                     <PrivateRoute path="/details/:id">
-                        <DetailsPage url={url}/>
+                        <DetailsPage/>
                     </PrivateRoute>
                 </Switch>
             </section>

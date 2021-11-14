@@ -4,10 +4,9 @@ import React, {useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 import {BlueButton, Spinner} from "../../components";
 import {ResultCard} from "../../components/cards"
-import {A1, A2, A3, A4} from "../../assets/images/animals"
-import {home1} from "../../assets/images/home";
+import animal from "../../assets/images/animal.png"
 
-export default function ResultsPage({setUrl, search, searchValue}) {
+export default function ResultsPage({search, searchValue}) {
 
     useDarkTheme();
     const history = useHistory();
@@ -16,13 +15,9 @@ export default function ResultsPage({setUrl, search, searchValue}) {
     const [info, setInfo] = useState([]);
     const [id, setId] = useState('');
 
-    const images = [A1, A2, A3, A4]
-    let shuffledImages = [];
-
     let endpoint = ''; //setEndpoint within useEffect not working
     const axios = require('axios');
     let taxonid = [];
-    let aImage = '';
 
     useEffect(() => {
 
@@ -112,9 +107,8 @@ export default function ResultsPage({setUrl, search, searchValue}) {
     }
 
     //pass id selected animal to details page
-    const itemSelect = (id, image) => {
+    const itemSelect = (id) => {
         setId(id);
-        setUrl(image);
         history.push(`/details/${id}`);
     }
 
@@ -126,7 +120,6 @@ export default function ResultsPage({setUrl, search, searchValue}) {
             </div>
         )
     } else {
-        shuffledImages = images.sort(() => 0.5 - Math.random());
 
         if (search === 'region') {
             return (
@@ -139,7 +132,7 @@ export default function ResultsPage({setUrl, search, searchValue}) {
                                     return (
                                         <>
                                             <ResultCard
-                                                image={home1}
+                                                image={animal}
                                                 key={item.taxonid}
                                                 onClick={() => itemSelect(item.taxonid)}
                                                 kingdom={item.kingdom_name}
@@ -170,9 +163,9 @@ export default function ResultsPage({setUrl, search, searchValue}) {
                                     return (
                                         <>
                                             <ResultCard
-                                                image={shuffledImages[0]}
+                                                image={animal}
                                                 key={item.taxonid}
-                                                onClick={() => itemSelect(item.taxonid, shuffledImages[0])}
+                                                onClick={() => itemSelect(item.taxonid)}
                                                 kingdom={item.kingdom}
                                                 king_class={item.class}
                                                 name_en={item.main_common_name}
@@ -202,7 +195,7 @@ export default function ResultsPage({setUrl, search, searchValue}) {
                                     return (
                                         <>
                                             <ResultCard
-                                                image={home1}
+                                                image={animal}
                                                 key={item.taxonid}
                                                 onClick={() => itemSelect(item.taxonid)}
                                                 kingdom={item.kingdom}

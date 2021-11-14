@@ -5,7 +5,7 @@ import up from '../../../assets/images/icons/arrow-up.png';
 import down from '../../../assets/images/icons/arrow-down.png';
 import line from '../../../assets/images/icons/line-green.png';
 import question from '../../../assets/images/icons/question.png';
-import cheetah from "../../../assets/images/bgr_details.png";
+import cheetah from "../../../assets/images/animal.png";
 
 export default function Result({children, onClick, kingdom, king_class, name_en, name_lt, category, population, image}) {
 
