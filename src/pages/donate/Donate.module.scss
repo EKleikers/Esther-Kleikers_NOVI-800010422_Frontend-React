@@ -1,0 +1,83 @@
+@import "../../styles/styles.scss";
+
+.header {
+  background-color: pink;
+}
+
+donate-page-container {
+  heigth: 100vh;
+  width: 100%;
+  background-color: aqua;
+  //display: flex;
+  //flex-direction: row;
+}
+
+.donate-page {
+  margin-top: -205vh;
+//  //flex: 1;
+//  //alignItems: 'center';
+//  //justifyContent: 'center';
+//  //margin-left: 5%;
+//  //margin-top: -205vh;
+//  heigth: 100vh;
+//  width: 100%;
+//  background-color: yellow;
+//
+//
+//  .donate-text {
+//
+//    font-family: "Avenir";
+//    font-size: 50px;
+//    font-weight: bold;
+//    //margin-left: 12%;
+//    margin-top: 10%;
+//    margin-bottom: 2%;
+//    background-color: chartreuse;
+//    h3 {
+//      color:$color-black;
+//    }
+  }
+//
+//  .text {
+//    color: white;
+//    font-family: "Avenir";
+//    font-size: 35px;
+//    font-weight: initial;
+//    //margin-left: 12%;
+//    margin-top: -2%;
+//    background-color: chartreuse;
+//  }
+//}
+//
+//
+//.donate-container {
+//
+//  //margin-left: 2%;
+//  color: #1FA5C4;
+//  height: auto;
+//  margin-bottom: 10vh;
+//
+//
+//
+//  .partners-text {
+//    margin-left: -5vw;
+//    color: #1FA5C4;
+//    font-family: "Avenir";
+//    font-size: 50px;
+//    font-weight: bold;
+//    margin-left: 12%;
+//    margin-top: 12%;
+//
+//  }
+//
+//  .donate-grid {
+//
+//    margin-left: 5vw;
+//    width: 75vw;
+//    height: auto;
+//    display: inline-grid;
+//    grid-template-columns: 1fr 1fr 1fr 1fr;
+//    gap: 30px 60px;
+//
+//  }
+//}

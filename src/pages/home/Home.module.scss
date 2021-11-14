@@ -1,0 +1,40 @@
+
+@import "../../styles/styles.scss";
+
+//.text {
+//    color: $color-white;
+//    background: $color-black;
+//    font-size: 100px;
+//    font-weight: bold;
+//    margin-left: 7%;
+//    margin-top: -3%;
+//}
+
+
+.home-page-container {
+
+  //.content{
+  //  margin-top: -400px;
+  //}
+
+  .page {
+    //margin-top: -400px;
+    background: orange;
+    /*flex: 1;*/
+    /*alignItems: 'center';*/
+    /*justifyContent: 'center';*/
+    /*margin-left: 7%;*/
+    /*padding-top: 500px;*/
+  }
+     p {
+        color: $color-red;
+       //color: white;
+       font-size: 100px;
+       font-weight: bold;
+       margin-left: 7%;
+       margin-top: -3%;
+     }
+}
+
+
+

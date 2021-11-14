@@ -1,0 +1,31 @@
+.page-container {
+    //margin-top: 200px;
+    height: 130vh;
+
+    width: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.page {
+    flex: 1;
+    alignItems: 'center';
+    justifyContent: 'center';
+    margin-left: 25px;
+}
+
+.results-grid {
+    /*margin-top: 3%;*/
+    /*margin-left: 15%;*/
+    width: 90vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px ;
+    /*background-color: blue;*/
+}
+
+.bluebutton-container{
+    width: 25vw;
+align-content: space-around;
+}

@@ -1,0 +1,104 @@
+.page-container {
+
+}
+
+
+.page-container {
+    /*margin-top: -200px;*/
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menu-logo {
+   margin-left: 350px;
+    font-family: Avenir;
+    font-size: 40px;
+    color: #1FA5C4;
+    display: flex;
+    flex-direction: row;
+    font-weight: lighter;
+    align-items: flex-start;
+    /*align-content: flex-start;*/
+}
+.menu-tabs {
+    width: 40%;
+}
+
+.page {
+    flex: 1;
+    alignItems: 'center';
+    justifyContent: 'center';
+    margin-left: 7%;
+    /*padding-top: 500px;*/
+}
+
+
+
+.header {
+    background-color: transparent;
+}
+.bluebird-text {
+    color: white;
+    font-family: "Avenir";
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 15%;
+}
+
+.text {
+    color: white;
+    font-family: "Avenir";
+    font-size: 35px;
+    font-weight: initial;
+    margin-left: 12%;
+    margin-top: -2%;
+}
+.bluebird-text {
+    color: white;
+    font-family: "Avenir";
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 15%;
+}
+
+.partners-text {
+    color: #1FA5C4;
+    font-family: "Avenir";
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 12%;
+}
+
+.partners-container {
+
+    margin-left: 7%;
+    color: #1FA5C4;
+    /*background-color: pink;*/
+    height: auto;
+}
+
+.partners-grid {
+    margin-top: 3%;
+    margin-left: 15%;
+    width: 75%;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px 60px;
+    /*background-color: blue;*/
+}
+
+/*img {*/
+/*    width: 100px;*/
+/*}*/
+
+

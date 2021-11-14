@@ -1,0 +1,19 @@
+
+
+.spinner-container{
+    margin-top: -200px;
+    margin-bottom: -10px;
+    width: 100vw;
+    height: 105vh;
+    background-color: #584E4ED6;
+}
+
+
+.spinner {
+    position: absolute;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    left: 30vw;
+    transform: translate(50%, 50%);
+/*margin-left: 500px;*/
+}

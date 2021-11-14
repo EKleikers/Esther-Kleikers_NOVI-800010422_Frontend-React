@@ -1,0 +1,64 @@
+
+.input-container {
+    width: 100%;
+    margin: auto;
+}
+
+input {
+    width: 95%;
+    height: 4rem;
+    /*background-color: #00000080;*/
+    background-color: #00000059;
+    border-radius: 10px;
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 28px;
+    color: #FFFFFFCC;
+    margin-bottom: 1.3rem;
+    margin-left: -1.1rem;
+    box-shadow:inset 0.3rem 0.3rem 0 0 #000;
+    padding-left: 1rem;
+}
+
+label {
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #FFFFFFCC;
+    padding-left: 1rem
+}
+
+input::placeholder {
+    font-size: 28px;
+    padding-left: 1rem;
+}
+
+.error_message {
+    color: red;
+    margin-top: -16px;
+    margin-bottom: -5px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+/*input[type="text"] {*/
+/*    font-size: 20px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*input[type="number"] {*/
+/*    font-size: 20px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*input[type="radio"] {*/
+/*    font-size: 20px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*input[type="password"] {*/
+/*    font-size: 20px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+

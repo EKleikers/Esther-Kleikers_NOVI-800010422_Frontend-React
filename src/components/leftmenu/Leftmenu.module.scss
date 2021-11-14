@@ -1,0 +1,30 @@
+.leftmenu {
+    position: fixed;
+    top: 275px;
+}
+
+
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.button-icon {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button-icon:hover + .button-text {
+    display: block;
+    margin-left: 10px;
+    width: auto;
+    color: #1FA5C4;
+}
+.button-text {
+    display: none;
+}
+
+
